@@ -9,7 +9,7 @@ The goal of this project is to train an agent to solve Unity's Banana Collector 
 The primary learning algorithm used to solve this task was a Deep Q-Network. This is a reinforcement learning algorithm made popular in February 2015, by researchers at DeepMind. This algorithm combines deep learning and reinforcement learning to achieve super-human level control on various Atari games from raw pixels. 
 
 #### Algorithm
-DQN's extend traditional Q-Learning by using function approximation represented by a deep neural network, hence the name DQN. In addition to using a DNN to represent the neural network, two other important modifications were made:
+DQN's extend traditional Q-Learning by using function approximation represented by a deep neural network, hence the name DQN. In addition to using a DNN to represent the state-action space, two other important modifications were made:
 
 - Experience Replay: Experience replay is help in that in uncorrelated the consecutive states, this is important as x, y, z. 
    

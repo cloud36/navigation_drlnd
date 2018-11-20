@@ -28,6 +28,9 @@ DQN's extend traditional Q-Learning by using function approximation represented 
 ## Double DQN 
 
 ### Plot of Rewards
+Inline-style: 
+![alt text](https://github.com/cloud36/navigation_drlnd/blob/master/dqn_rewards.png "Logo Title Text 1")
+
 
 ### Future Imporvements
 

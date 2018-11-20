@@ -33,5 +33,6 @@ DQN's extend traditional Q-Learning by using function approximation represented 
 
 1. Prioritized Experience Replay (PER)
 2. Dueling DQN 
+3. It would be interesting to see if observed human game play could lead to faster convergence. 
    
    

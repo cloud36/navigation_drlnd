@@ -30,7 +30,7 @@ DQN's extend traditional Q-Learning by using function approximation represented 
 
 ## Double DQN 
 
-Double DQN is an improvement on the original DQN and it attempts to address overly optimistic reward estimation in DQN's. 
+Double DQN is an improvement on the original DQN and it attempts to address overly optimistic q-function that is observed in DQN's. It is easy for a DQN to overestiamte the q-function because of the argmax operator in the TD Error update. To handle this Double DQN makes a simple modification by having another DNN estimate the value of the argmax operator i.e. we use DNN-1 to select the actions in th argmax operator and use another DNN (DNN-2) to estimate the value. To implement this we simple use our target and local DNNs. 
 
 ### Plot of Rewards
 

@@ -44,6 +44,11 @@ Inline-style:
 ![alt text](https://github.com/cloud36/navigation_drlnd/blob/master/dqn_double_dqn_rewards.png)
 
 
+### Watch Smart Agent Play!
+[![Double DQN](https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif)](https://www.youtube.com/watch?v=erAbiYw95xc&feature=youtu.be)
+
+(https://www.youtube.com/watch?v=erAbiYw95xc&feature=youtu.be)
+
 ### Future Improvements / Implementations 
 
 1. Prioritized Experience Replay (PER)

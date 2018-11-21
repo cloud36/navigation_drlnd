@@ -16,9 +16,12 @@ DQN's extend traditional Q-Learning by using function approximation represented 
 - Target Network: Another important addition is the use of a target network. Without the target network, a single DNN would be used to estimate both the current state value and the expected next state value. The problem arises when updating the parameters of the DNN. With the updated parameters, both the current state estimate and next state estimate may change, which in turn would make minimizing the loss function difficult -- think of chasing a moving target. 
 
 #### Hyperparameters
-- Gamma: Discount Factor
-- Alpha: Learning Rate
-- Epsilon: For exploration versus exploitation
+- Gamma: Discount Factor = .99
+    - With a discount factor of .99, this means that 99% of the next states reward is included in current states value estimation. 
+- Alpha: Learning Rate = 5e-4
+    - This controls the magnitude of steps gradient descent takes. A higher learning rate could lead to more oscillating at first. 
+- Epsilon: 
+    - For exploration versus exploitation. This starts at 1 to encourage exploration at beginning of game and decays to .01 by .95 each episode. 
 - Buffer Size: Number of experiences to be stored in replay memory bank. 
 - Batch Size: Number of samples to use for mini-batch stochastic gradient descent. 
 - Tau: To control updating Local Network versus Target Network. 
@@ -27,12 +30,17 @@ DQN's extend traditional Q-Learning by using function approximation represented 
 
 ## Double DQN 
 
+Double DQN is an improvement on the original DQN and it attempts to address overly optimistic reward estimation in DQN's. 
+
 ### Plot of Rewards
+
+Below we can see the average reward over the last 100 episodes for both DQN and Double DQN. It is interesting that they are very similar. It makes clear that Double DQN doesn't necessarily make for quicker convergence, but more stable learning. 
+
 Inline-style: 
 ![alt text](https://github.com/cloud36/navigation_drlnd/blob/master/dqn_rewards.png "Logo Title Text 1")
 
 
-### Future Imporvements
+### Future Improvements / Implementations 
 
 1. Prioritized Experience Replay (PER)
 2. Dueling DQN 

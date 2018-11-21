@@ -8,6 +8,8 @@ The goal of this project is to train an agent to solve Unity's Banana Collector 
 
 The primary learning algorithm used to solve this task was a Deep Q-Network. This is a reinforcement learning algorithm made popular in February 2015, by researchers at DeepMind. This algorithm combines deep learning and reinforcement learning to achieve super-human level control on various Atari games from raw pixels. 
 
+Original Paper: https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf
+
 #### Algorithm
 DQN's extend traditional Q-Learning by using function approximation represented by a deep neural network, hence the name DQN. In addition to using a DNN to represent the state-action space, two other important modifications were made: experience replay and use of a target network. Both of these modifications were to help overcome what is known as the "deadly triad" coined by Richard Sutton. The deadly triad occurs when three elements are combined: bootstrapping, function approximation and off-policy learning. DQN has all three of these ingredients. 
 
@@ -31,6 +33,8 @@ DQN's extend traditional Q-Learning by using function approximation represented 
 ## Double DQN 
 
 Double DQN is an improvement on the original DQN and it attempts to address overly optimistic q-function that is observed in DQN's. It is easy for a DQN to overestiamte the q-function because of the argmax operator in the TD Error update. To handle this Double DQN makes a simple modification by having another DNN estimate the value of the argmax operator i.e. we use DNN-1 to select the actions in th argmax operator and use another DNN (DNN-2) to estimate the value. To implement this we simple use our target and local DNNs. 
+
+Read more about Double DQN's here: https://arxiv.org/pdf/1509.06461.pdf
 
 ### Plot of Rewards
 

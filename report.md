@@ -41,7 +41,7 @@ Read more about Double DQN's here: https://arxiv.org/pdf/1509.06461.pdf
 Below we can see the average reward over the last 100 episodes for both DQN and Double DQN. It is interesting that they are very similar. It makes clear that Double DQN doesn't necessarily make for quicker convergence, but more stable learning. 
 
 Inline-style: 
-![alt text](https://github.com/cloud36/navigation_drlnd/blob/master/dqn_rewards.png "Logo Title Text 1")
+![alt text](https://github.com/cloud36/navigation_drlnd/blob/master/dqn_double_dqn_rewards.png)
 
 
 ### Future Improvements / Implementations 

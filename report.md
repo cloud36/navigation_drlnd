@@ -17,10 +17,10 @@ DQN's extend traditional Q-Learning by using function approximation represented 
 ![alt text](https://github.com/cloud36/navigation_drlnd/blob/master/q_learning_equation.png)
 [source](http://incompleteideas.net/book/bookdraft2017nov5.pdf)
 
-    - Q(s,a): Represents current value for state-action paid
-    - Reward: The immediate reward observed for taking action in state
-    - Alpha: Learning Rate
-    - Lambda: Discount Factor 
+    1. Q(s,a): Represents current value for state-action paid
+    2. Reward: The immediate reward observed for taking action in state
+    3. Alpha: Learning Rate
+    4. Lambda: Discount Factor 
 
 However, when large state-action spaces are encountered tables are no longer sufficient and a function approximator is needed. This is where deep neural networks come into play. In DQN's a DNN is used to represent the state-action space, two other important modifications were made: experience replay and use of a target network. Both of these modifications were to help overcome what is known as the "deadly triad" coined by [Richard Sutton](https://en.wikipedia.org/wiki/Richard_S._Sutton). The deadly triad occurs when three elements are combined: bootstrapping, function approximation and off-policy learning. DQN has all three of these ingredients. 
 

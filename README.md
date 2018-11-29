@@ -34,10 +34,12 @@ The task is episodic, and in order to solve the environment, your agent must get
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
 
-2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
+2. You will also need Python3 (https://www.anaconda.com/download/#macos) and PyTorch (https://pytorch.org/resources).
+
+3. Place the file in the root of the repository. 
 
 ### Instructions
 
-Follow the instructions in `Navigation.ipynb` to get started with training your own agent.
+Follow the instructions in `Navigation.ipynb` to get started with training your own agent or follow the instruction in 'play_smart_agent.ipynb' to play a smart agent trained by Double-DQN.
 
 

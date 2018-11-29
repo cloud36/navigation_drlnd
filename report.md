@@ -11,7 +11,12 @@ The primary learning algorithm used to solve this task was a Deep Q-Network. Thi
 Original Paper: https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf
 
 #### Algorithm
-DQN's extend traditional Q-Learning by using function approximation represented by a deep neural network, hence the name DQN. In addition to using a DNN to represent the state-action space, two other important modifications were made: experience replay and use of a target network. Both of these modifications were to help overcome what is known as the "deadly triad" coined by Richard Sutton. The deadly triad occurs when three elements are combined: bootstrapping, function approximation and off-policy learning. DQN has all three of these ingredients. 
+
+DQN's extend traditional Q-Learning by using function approximation represented by a deep neural network, hence the name DQN. As a refresher, the basic idea behind Q-Learning is to create a table of state-action pairs that maps to the estimated future discounted reward of taking said action in said state. As the agent interacts with an environement it updates this value using the follwoing equation. 
+
+However, when large state-action spaces are encountered tables are no longer sufficient and a function approximator is needed. This is where deep nerual networks come into play. In DQN's a DNN is used to represent the state-action space, two other important modifications were made: experience replay and use of a target network. Both of these modifications were to help overcome what is known as the "deadly triad" coined by [Richard Sutton](https://en.wikipedia.org/wiki/Richard_S._Sutton). The deadly triad occurs when three elements are combined: bootstrapping, function approximation and off-policy learning. DQN has all three of these ingredients. 
+
+INSERT IMAGE HERE 
 
 - Experience Replay: Not only does experience replay help us decorrelate state-action pairs, which helps prevent the learning from oscillating or diverging,  but it can also help the learning algorithm converge faster and make more efficient use of its past experience. 
    
@@ -29,6 +34,8 @@ DQN's extend traditional Q-Learning by using function approximation represented 
 - Tau: To control updating Local Network versus Target Network. 
 
 #### Model Architecture
+
+INSERT IMAGE HERE 
 
 ## Double DQN 
 

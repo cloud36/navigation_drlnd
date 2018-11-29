@@ -55,7 +55,6 @@ Read more about Double DQN's [here](https://arxiv.org/pdf/1509.06461.pdf)
 
 Below we can see the average reward over the last 100 episodes for both DQN and Double DQN. It is interesting that they are converge in a similar amount of time steps. However, it is interesting to see how Double DQN (left) appears to be more stable with less variance around average reward. 
 
-Inline-style: 
 ![alt text](https://github.com/cloud36/navigation_drlnd/blob/master/dqn_double_dqn_rewards.png)
 
 

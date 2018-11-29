@@ -16,7 +16,7 @@ DQN's extend traditional Q-Learning by using function approximation represented 
 
 However, when large state-action spaces are encountered tables are no longer sufficient and a function approximator is needed. This is where deep nerual networks come into play. In DQN's a DNN is used to represent the state-action space, two other important modifications were made: experience replay and use of a target network. Both of these modifications were to help overcome what is known as the "deadly triad" coined by [Richard Sutton](https://en.wikipedia.org/wiki/Richard_S._Sutton). The deadly triad occurs when three elements are combined: bootstrapping, function approximation and off-policy learning. DQN has all three of these ingredients. 
 
-[!(https://github.com/cloud36/navigation_drlnd/blob/master/q_learning_equation.png)]
+[logo]: https://github.com/cloud36/navigation_drlnd/blob/master/q_learning_equation.png
 
 - Experience Replay: Not only does experience replay help us decorrelate state-action pairs, which helps prevent the learning from oscillating or diverging,  but it can also help the learning algorithm converge faster and make more efficient use of its past experience. 
    

@@ -12,7 +12,7 @@ Original Paper: [click here](https://storage.googleapis.com/deepmind-media/dqn/D
 
 #### Algorithm
 
-DQN's extend traditional Q-Learning by using function approximation represented by a deep neural network, hence the name DQN. As a refresher, the basic idea behind Q-Learning is to create a table of state-action pairs that maps to the estimated future discounted reward of taking said action in said state. As the agent interacts with an environement it updates this value using the follwoing equation. 
+DQN's extend traditional Q-Learning by using function approximation represented by a deep neural network, hence the name DQN. As a refresher, the basic idea behind Q-Learning is to create a table of state-action pairs that maps to the expected future discounted reward of taking said action in said state. As the agent interacts with an environement it updates this value using the follwoing equation. 
 
 ![alt text](https://github.com/cloud36/navigation_drlnd/blob/master/q_learning_equation.png)
 [source](http://incompleteideas.net/book/bookdraft2017nov5.pdf)

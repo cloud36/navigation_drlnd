@@ -38,7 +38,9 @@ However, when large state-action spaces are encountered tables are no longer suf
 
 #### Model Architecture
 
-INSERT IMAGE HERE 
+![alt text](https://github.com/cloud36/navigation_drlnd/blob/master/dnn.png)
+
+Above, we can see a diagram of the deep neural network that was used. It has two fully-connected hidden layers both with ReLu activation functions. 
 
 ## Double DQN 
 
